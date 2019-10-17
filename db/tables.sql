@@ -1,7 +1,3 @@
-DROP DATABASE IF EXISTS favorites_tracker;
-CREATE DATABASE favorites_tracker;
-
-\c favorites_tracker;
 
 CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
