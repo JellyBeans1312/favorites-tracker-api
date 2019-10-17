@@ -8,7 +8,7 @@ module.exports = {
     client: 'pg',
     connection: process.env.DATABASE_URL + `?ssl=true`,
     migrations: {
-      directory: './db/tables.sql'
+      directory: './db/'
     },
     useNullAsDefault: true
   }
