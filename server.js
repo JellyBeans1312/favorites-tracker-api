@@ -8,7 +8,7 @@ app.use(express.json());
 // DB Setup
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
-const database = require('knex')('production');
+const database = require('knex')(configuration);
 
 // CORS Setup - enable all requests
 app.use(cors());
